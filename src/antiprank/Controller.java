@@ -97,7 +97,7 @@ public class Controller implements KeyListener, MouseListener {
 			fireImage();
 		} catch (Exception exception) {
 			AntiStatus.showException(exception);
-			throw exception;
+			throw new RuntimeException(exception);
 		}
 	}
 
@@ -133,7 +133,7 @@ public class Controller implements KeyListener, MouseListener {
 			}
 		} catch (Exception exception) {
 			AntiStatus.showException(exception);
-			throw exception;
+			throw new RuntimeException(exception);
 		}
 	}
 
